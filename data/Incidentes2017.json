@@ -1,0 +1,34 @@
+{
+ "name": "Incidentes Totales",
+		 "children": 
+		 [						
+				{"name": "CONTROL ACTIVOS", "size":4},
+				{"name": "CONTROL PROBLEMAS", "size":210},
+				{"name": "CONTROL SEGURIDAD TI ", "size":7},
+				{"name": "GESTION CAMBIOS", "size":10},
+				{"name": "GESTION PROVEEDORES", "size":32},
+				{"name": "INFRAESTRUCTURA BASE SD", "size":187},
+				{"name": "INFRAESTRUCTURA CO SD ", "size":20},
+				{"name": "INFRAESTRUCTURA REDES ", "size":86},
+				{"name": "MESA DE SERVICIOS", "size":1680},
+				{"name": "MOBICONTROL ", "size":8},
+				{"name": "SOPORTE BOGOTA ", "size":600},
+				{"name": "SOPORTE BOGOTA VIP ", "size":100},
+            	                {"name": "SOPORTE CDC ", "size":40},
+				{"name": "SOPORTE CEDIS ", "size":3},
+				{"name": "SOPORTE CHILE ", "size":679},
+				{"name": "SOPORTE CIUDADES ", "size":2592},
+				{"name": "SOPORTE IMPRESION ", "size":77},				
+				{"name": "INCIDENTES","children": [
+                                                                    {"name": "Autogestion, Usuario", "size":4},
+                                                                    {"name": "Otros", "size":17},
+                                                                    {"name": "Comercial Front", "size":81},						
+                                                                    {"name": "Hub, Front  ", "size":130},
+                                                                    {"name": "Logistica, Front", "size":700},
+                                                                    {"name": "nsr, front  ", "size":20},
+                                                                    {"name": "Operacion, Front  ", "size":900},
+                                                                    {"name": "Soporte, Cedis  ", "size":50},
+                                                                    {"name": "Soporte, Front  ", "size":181}
+		                                                  ]}							  
+		 ]		
+}

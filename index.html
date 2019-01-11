@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>        
+        <title>Gestion de Problemas TI</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="js/crea_burbujas.js" type="text/javascript"></script>
+         <script src="js/crea_bar.js" type="text/javascript"></script>
+          <script src="js/filtrar.js" type="text/javascript"></script>
+        <link rel="STYLESHEET" type="text/css" href="css/css_general.css">         
+    </head>
+    <body>
+        <div>
+            <center>
+                <!--<img src="images/Homecenter_Sodimac.png" WIDTH=500 HEIGHT=100 ALIGN=middle>-->
+                <h1 class="subtitulos">Gestion de Problemas de Tecnologia</h1>
+            </center>
+        </div>
+       <!-- <p>La visualizacion tiene los siguientes objetivos:</p>
+        <ol>
+            <li>Identificar a primera vista las áreas en donde más se están registrando casos en la categoría “INCIDENTES”.</li>
+            <li>Comparar, por área, la proporción sobre el total de casos del año 2017 con lo que va corrido del año 2018 para atacar aquellas áreas en donde el número de incidentes aumento o se mantuvo constante.</li>
+            <li>Posterior al hallazgo de causas, llevar un control del número de casos registrados relacionados con el área objetivo.</li>
+        </ol>
+        
+        <p> Cada area de los circulos que se quieren comparar, se resalta conforme pasamos el puntero del mouse sobre ella.
+        Asi mismo, se listan en el grafico de barras, las categorias que mas llegan al area o circulo elegido (En este demo
+        solo se han elegido algunas categorias: Logistica, Operacion, Hub y Soporte Ciudades).</p>
+        
+        <p>Ejemplo:</p>
+        <p>Durante el año 2017 se registraron 37742 incidentes de los cuales 7578(20.08%) corresponden
+        a casos de Logistica.</p>
+        <p>Entre los meses de Enero y Marzo de 2018, se registraron 3076 incidentes de los cuales 485(15.77%) corresponden a casos de Logistica.</p>
+        <p>En terminos de proporcion sobre el total de casos recibidos, se ha logrado reducir alrededor del 5%, sin embargo
+        , aun quedan categorias como "ASN Trf", "ASN Lpn", "Checkout", entre otras (Grafico de Barras), que pueden ser corregidas de raiz y de las cuales
+        se realizara la gestion o investigacion segun sea el caso.</p>
+        <p>Existen areas en donde el crecimiento del porcentaje nos demanda especial atencion. Tal es el caso de "SOPORTE 
+        CIUDADES" que tiene un crecimiento del 8.92% al 26.17%, y cuyas categorias que generan mas casos se centran en errores
+        en POS, fallas de hardware, conectividad LAN y WAN</p>-->
+        <div>
+            <center>               
+                <svg width="400" height="40"><g><text x="50%" y ="50%" style="font-size: 20px;">2017</text></g></svg>
+                <svg width="400" height="40"><g><text x="50%" y ="50%" style="font-size: 20px;">2018</text></g></svg>
+                <svg width="400" height="40"><g><text x="50%" y ="50%" style="font-size: 20px;">2018</text></g></svg>
+           </center>
+        </div>
+         <div id="division2">           
+           <center>               
+                <svg width="400" height="40"><g><text class ="med2017" x="50%" y ="50%" style="font-size: 20px;"></text></g></svg>
+                <svg width="400" height="40"><g><text class ="med2018" x="50%" y ="50%" style="font-size: 20px;"></text></g></svg>
+                <svg width="400" height="40"><g><text class ="med2018" x="50%" y ="50%" style="font-size: 20px;"></text></g></svg>
+           </center>            
+       </div> 
+        <div id="division1">           
+           <center>               
+                <span class="burbujas_2017"></span>
+                <span class="burbujas_2018"></span>
+                <span class="chart_total"></span>
+           </center>            
+       </div> 
+       <div>
+             <span class="line_chart"></span>
+       </div>
+
+       
+<!------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------>
+<!--       CSV Filter 1 - This will filter by "sec" : <select id="sec">
+		  <option value="990" >990</option>
+          <option value="903">903</option>
+		  <option value="905" selected>905</option>
+          <option value="907">907</option>
+		  <option value="950" >950</option>
+          <option value="2000">2000</option>
+</select> <br>-->
+<!------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------>
+               <script>
+            //console.log("Llamada a funcion crea_burbujas");
+            var seccion_2017 = ".burbujas_2017";
+            var archivo_2017 = "data/Incidentes2017.json";            
+            var seccion_2018 = ".burbujas_2018";
+            var archivo_2018 = "data/Incidentes2018.json"; 
+            var nombre_svg_2017 = "Incidentes2017";
+            var nombre_svg_2018 = "Incidentes2018";     
+            crea_burbujas(seccion_2017,archivo_2017,nombre_svg_2017);
+            crea_burbujas(seccion_2018,archivo_2018,nombre_svg_2018);
+            
+            var seccion_bar_2017 = ".chart_total"
+            
+            crear_bar_chart(seccion_bar_2017);
+            prueba("Incidentes Totales");
+            //crea_burbujas(seccion_2017,archivo_2017,nombre_svg_2017);
+            //crea_burbujas(seccion_2018,archivo_2018,nombre_svg_2018);
+            
+
+            //crea_linechar();
+            
+        </script>    
+        
+    </body>
+   
+</html>

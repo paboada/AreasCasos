@@ -1,0 +1,101 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20/12/2017, 10:10:25 AM
+    Author     : BOAA01
+*/
+
+circle {
+  fill: #1f77b4;
+  fill-opacity: .25;
+  stroke: rgb(31, 119, 180);
+  stroke-width: 1px;
+}
+
+
+.leaf circle {
+  fill: #FEB371;
+  fill-opacity: 1;
+}
+
+text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.axis--x path {
+display: none;
+}
+
+.line {
+fill: none;
+stroke: steelblue;
+stroke-width: 1.5px;
+} 
+
+/*
+css para heat map
+*/
+body {
+  //background: linear-gradient(rgb(30,30,30), rgb(25,25,25));
+  background: white;
+}
+
+#chart {
+  width: 1200px;
+  margin: 55px auto;
+}
+
+svg {
+  background: #D4D8DA;
+}
+
+rect{
+    fill: #000080;    
+}
+.axis path {
+    fill: none;
+}
+
+.axis line {
+  stroke: #b57575;
+}
+
+div.tooltip {	
+    position: absolute;
+    text-align: left;
+    padding: 12px;
+    font-size: 16px;
+    font-family: 'Cormorant Garamond', serif;
+    background: rgba(250, 250, 250, 0.75);
+    border-radius: 3px;
+    pointer-events: none;
+}
+
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #D4D8DA;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+.x path {
+	display: none;
+}
+.toolTip {
+	position: absolute;
+  display: none;
+  min-width: 80px;
+  height: auto;
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid #6F257F;
+  padding: 14px;
+  text-align: center;
+}
+
+p , ol{ font-size: large  }

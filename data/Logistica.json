@@ -1,0 +1,10 @@
+[
+    {"name": "Logistica, Front", "area": "ASN Trf", "value": 45},
+    {"name": "Logistica, Front", "area": "ASN Lpn", "value": 31},
+    {"name": "Logistica, Front", "area": "Checkout", "value": 27},
+    {"name": "Logistica, Front", "area": "Pix", "value": 26},
+    {"name": "Logistica, Front", "area": "ASN Trf Item", "value": 25},
+    {"name": "Logistica, Front", "area": "SCI", "value": 24},
+    {"name": "Logistica, Front", "area": "ILPN-OLPN", "value": 21},
+    {"name": "Logistica, Front", "area": "INTEGRACION ASN", "value": 19}	
+]
